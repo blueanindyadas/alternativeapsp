@@ -1,4 +1,4 @@
-# alternativeesaapsp
+# aapsp
 COMPILE:
 sh compile.sh
 RUN:
