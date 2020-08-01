@@ -1,20 +1,20 @@
 /* *****************************************************************************
  * Copyright 2020 Anindya Das
  *
- * This file is part of apsp.
+ * This file is part of aapsp.
  *
- * apsp is free software: you can redistribute it and/or modify
+ * aapsp is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * apsp is distributed in the hope that it will be useful,
+ * aapsp is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with apsp.  If not, see <https://www.gnu.org/licenses/>.
+ * along with aapsp.  If not, see <https://www.gnu.org/licenses/>.
 *******************************************************************************/
 
 /************************* Header files ***************************************/
@@ -23,13 +23,13 @@
 #include <strings.h>
 #include <trace.h>
 #include <sa.h>
-#include <apsp_read_str.h>
-#include <apsp_isfx.h>
-#include <apsp_prefix.h>
+#include <aapsp_read_str.h>
+#include <aapsp_isfx.h>
+#include <aapsp_prefix.h>
 #include <stack.h>
 #include <queue.h>
 
-#define OVLAP_FILE_NAME "apsp.out"
+#define OVLAP_FILE_NAME "aapsp.out"
 /***************************** Global Variable ********************************/
 
 unsigned int *pfl;

@@ -1,4 +1,4 @@
 #!/bin/sh
 
-rm -rf trace_apsp.txt apsp.out
-./apsp -f input/strings32/
+rm -rf trace_aapsp.txt aapsp.out
+./aapsp -f input/strings32/

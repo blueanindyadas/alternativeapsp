@@ -1,4 +1,4 @@
-#valgrind --leak-check=yes --leak-check=full --show-leak-kinds=all -v ./apsp -f input/all.fasta/all_ests.fasta.11MB
+#valgrind --leak-check=yes --leak-check=full --show-leak-kinds=all -v ./aapsp -f input/all.fasta/all_ests.fasta.11MB
 # Compiling with -p for profiling using oprofile tool of gdb
 CC=gcc
 APSP_HEADERS_DIR=include
@@ -7,10 +7,10 @@ INCLUDE_DIRS= -I$(APSP_HEADERS_DIR)/ -I$(SRCDIR)/
 CFLAGS= -Wall
 LD_FLAGS=
 
-APSP_OBJS=$(SRCDIR)/apsp_main.o \
-          $(SRCDIR)/apsp_read_dir.o \
-          $(SRCDIR)/apsp_prefix.o \
-          $(SRCDIR)/apsp_isfx.o \
+APSP_OBJS=$(SRCDIR)/aapsp_main.o \
+          $(SRCDIR)/aapsp_read_dir.o \
+          $(SRCDIR)/aapsp_prefix.o \
+          $(SRCDIR)/aapsp_isfx.o \
           $(SRCDIR)/sand_sa.o \
           $(SRCDIR)/stack.o \
           $(SRCDIR)/queue.o \
@@ -45,13 +45,13 @@ endif
 %.o:%.c
 	$(CC) $(CFLAGS) $(INCLUDE_DIRS) -o $@ -c $<
 
-apsp:$(APSP_OBJS)
+aapsp:$(APSP_OBJS)
 	cd $(SRCDIR)/; make
 	gcc $(LD_FLAGS) -o $@ $^
 
 clean:
 	cd $(SRCDIR)/; make clean
-	rm -rf apsp *.o *~
+	rm -rf aapsp *.o *~
 
 trace:
 	rm -rf trace_apsp.txt trace_backup

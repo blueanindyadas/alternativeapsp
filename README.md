@@ -1,7 +1,10 @@
-# apsp
-COMPILE:
+# aapsp
+
+For compile:
 sh compile.sh
-RUN:
+
+For run:
 sh run.sh
-OUTPUT:
-cat apsp.out
+
+To check output after running:
+cat aapsp.out
